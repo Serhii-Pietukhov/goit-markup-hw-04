@@ -96,9 +96,8 @@ img {
   margin-left: 93px;
 }
 .header .contacts {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
-  border: 1px solid black;
 }
 
 .site-nav .item:not(:last-child) {
@@ -112,7 +111,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
+  align-items: center;
   color: var(--heading-color);
   font-weight: 500;
   line-height: 1.14;
@@ -124,39 +123,30 @@ img {
 }
 
 .contacts .link {
+  display: inline-flex;
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14px;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
-.contacts .envelope::before {
-  display: inline-flex;
+.item > .envelope::before {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   content: '';
   background-image: url(../images/envelope.svg);
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.contacts .mobile::before {
-  display: inline-flex;
+.item > .mobile::before {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   content: '';
-  border: 1px solid red;
-  /* background-image: url(../images/mobphone.svg); */
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../images/mobphone.svg);
 }
 
 .site-nav .link:hover,
@@ -259,7 +249,46 @@ h3 {
 .section .list {
   display: flex;
 }
-
+.section .icon-antena::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--secondary-background-colour);
+  background-image: url(../images/antena.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.section .icon-clock::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--secondary-background-colour);
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.section .icon-diagram::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--secondary-background-colour);
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.section .icon-astronaut::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--secondary-background-colour);
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
 .section-heading.hidden {
   display: none;
 }
