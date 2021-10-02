@@ -98,6 +98,7 @@ img {
 .header .contacts {
   display: flex;
   margin-left: auto;
+  border: 1px solid black;
 }
 
 .site-nav .item:not(:last-child) {
@@ -129,6 +130,33 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contacts .envelope::before {
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  content: '';
+  background-image: url(../images/envelope.svg);
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts .mobile::before {
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  content: '';
+  border: 1px solid red;
+  /* background-image: url(../images/mobphone.svg); */
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .site-nav .link:hover,
@@ -173,6 +201,19 @@ h3 {
 .hero {
   background-color: var(--hero-background);
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-image-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
