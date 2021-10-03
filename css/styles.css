@@ -135,25 +135,16 @@ img {
   align-items: center;
 }
 .item .header-icon {
-  display: flex;
-  fill: var(--text-color);
-  color: var(--text-color);
   margin-right: 10px;
-}
-.item .header-icon:hover {
-  fill: var(--accent-color);
-  color: var(--accent-color);
 }
 .contacts .link:hover {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
-/* .site-nav .link:hover,
-.site-nav .link:focus,
-.list .link:hover,
-.list .link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
-} */
+}
 
 /* FOOTER */
 
@@ -355,16 +346,25 @@ h3 {
 }
 
 /* Наша команда */
-.social-icon {
-  display: inline-flex;
+.social-icons {
+  height: 44px;
+  display: flex;
   list-style: none;
-  align-items: center;
   margin-top: 16px;
   margin-bottom: 30px;
   padding: 0;
   justify-content: center;
 }
-
+.icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 50%;
+  fill: var(--border-clients-color);
+}
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -396,6 +396,20 @@ h3 {
 .team-position {
   padding-top: 10px;
   /* padding-bottom: 30px; */
+}
+.team-icons:not(:last-child) {
+  margin-right: 10px;
+}
+.team-icons:last-child {
+  margin-right: 0;
+}
+.team-svg {
+  width: 20px;
+  height: 20px;
+}
+.social-icons .icon-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-white);
 }
 
 /* Постоянные клиенты */
